@@ -1,0 +1,8 @@
+{
+  "name": "cameraApp",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

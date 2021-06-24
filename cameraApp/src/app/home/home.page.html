@@ -1,0 +1,57 @@
+<!-- home.page.html -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <ion-title>
+      CamRecorder
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" [ngClass]="{'custom-ion-content': isToBack}">
+
+  <ion-grid>
+
+    <ion-row>
+      <ion-col>
+        <!-- <ion-button color="danger" (click)="hide()">Hide</ion-button> -->
+      </ion-col>
+      <ion-col>
+        <!-- <ion-button color="tertiary" (click)="show()">Show</ion-button> -->
+      </ion-col>
+
+    </ion-row>
+
+    <div class="display-cover">
+
+      <video autoplay></video>
+      <canvas id="myCanvas" class="d-none" width="250" height="250"></canvas>
+      <ion-row>
+        <ion-col>
+          <ion-button expand="block" color="success" id="send">Send</ion-button>
+        </ion-col>
+      </ion-row>
+
+      <div class="controls">
+        <ion-row>
+          <ion-col size="6">
+            <button class="btn btn-danger play" title="Play" id='play'>
+              <ion-icon name="videocam-outline"></ion-icon>
+            </button>
+          </ion-col>
+          <ion-col size="6">
+            <button class="btn btn-info pause " title="Pause" id="pause">
+              <ion-icon name="pause-circle-outline"></ion-icon>
+            </button>
+          </ion-col>
+        </ion-row>
+
+      </div>
+    </div>
+  </ion-grid>
+  <!-- <script src="./test.js"></script> -->
+</ion-content>

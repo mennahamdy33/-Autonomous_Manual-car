@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-title >
+      Your Favourite Car App <ion-icon name="car"></ion-icon>
+    </ion-title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <h1>Driving modes</h1>
+    <button ion-button icon-only clear id="one" (click)="One()" [routerLink]="['/mode1']" routerLinkActive="router-link-active">
+      &#x2776;
+    </button>
+    <button ion-button icon-only clear id="two" (click)="Two()" [routerLink]="['/mode2']" routerLinkActive="router-link-active">
+    &#x2777;
+    </button>
+  </div>
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+

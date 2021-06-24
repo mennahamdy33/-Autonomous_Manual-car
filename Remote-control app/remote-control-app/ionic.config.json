@@ -1,0 +1,8 @@
+{
+  "name": "Remote-control app",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

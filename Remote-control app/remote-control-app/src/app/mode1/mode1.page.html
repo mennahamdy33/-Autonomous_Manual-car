@@ -1,0 +1,40 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-title >
+      Manual Driving<ion-icon name="car"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div id="container">
+    <button ion-button icon-only clear id="Left" (click)="moveLeft()">
+      <ion-icon  name="arrow-back"></ion-icon>
+    </button>
+
+    <button ion-button icon-only clear id="down" (click)="moveDown()">
+      <ion-icon  name="arrow-down"></ion-icon>
+    </button>
+    <button ion-button icon-only clear id="Right" (click)="moveRight()">
+      <ion-icon  name="arrow-forward"></ion-icon>
+    </button>
+    <button ion-button icon-only clear id="up" (click)="moveUp()">
+      <ion-icon  name="arrow-up"></ion-icon>
+    </button>
+    <button ion-button icon-only clear id="stop" (click)="Stop()">
+      <ion-icon name="pause-circle-outline"></ion-icon>    </button>
+
+    <h2>
+      Object ID: <h3 id="id"></h3>
+    </h2>
+    <!--<button ion-button icon-only clear id="mode1" href="/mode1" >-->
+    <!--<ion-icon name="color-wand"></ion-icon>-->
+    <!--</button>-->
+  </div>
+</ion-content>
